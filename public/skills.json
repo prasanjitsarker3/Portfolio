@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "name": "HTML 5",
+        "value": "80"
+    },
+    {
+        "id": "2",
+        "name": "CSS 3",
+        "value": "77"
+    },
+    {
+        "id": "3",
+        "name": "JavaScript(ES6)",
+        "value": "75"
+    },
+    {
+        "id": "4",
+        "name": "React Js",
+        "value": "84"
+    },
+    {
+        "id": "5",
+        "name": "Redux",
+        "value": "40"
+    },
+    {
+        "id": "6",
+        "name": "Firebase",
+        "value": "77"
+    },
+    {
+        "id": "7",
+        "name": "Tailwind CSS",
+        "value": "87"
+    },
+    {
+        "id": "8",
+        "name": "Bootstrap 5",
+        "value": "75"
+    },
+    {
+        "id": "9",
+        "name": "Node.js",
+        "value": "60"
+    },
+    {
+        "id": "10",
+        "name": "Express.js",
+        "value": "75"
+    },
+    {
+        "id": "11",
+        "name": "MongoDB",
+        "value": "70"
+    },
+    {
+        "id": "12",
+        "name": "Mongoose",
+        "value": "40"
+    },
+    {
+        "id": "13",
+        "name": "JAVA",
+        "value": "75"
+    },
+    {
+        "id": "14",
+        "name": "C++",
+        "value": "70"
+    }
+]

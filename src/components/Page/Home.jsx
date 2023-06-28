@@ -2,20 +2,14 @@ import React from 'react';
 import Lottie from "lottie-react";
 import animation from '../../assets/140022-coding.json';
 import { FaArrowDown } from 'react-icons/fa';
-import js from '../../Icon/js.jpg'
-import java from '../../Icon/java.jpg'
-import node from '../../Icon/node.jpg'
-import db from '../../Icon/db.jpg'
-import react from '../../Icon/react js.jpg';
-import base from '../../Icon/firebase.jpg';
-import Marquee from "react-fast-marquee";
 import github from '../../assets/image/github.png'
 import linkedin from '../../assets/image/linkedin.png'
 import facebook from '../../assets/image/facebook.png'
 import instagram from '../../assets/image/instagram.png'
-import pdf from '../../assets/image/PRASANJIT SARKER __MERN (2).pdf'
 import About from './About'; 
 import ExtraInformation from './ExtraInformation';
+import Skill from './Skill';
+import Projects from './Projects';
 const Home = () => {
     const handleDownload = () => {
         const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link'; 
@@ -68,6 +62,8 @@ const Home = () => {
             </div> 
             <About></About> 
             <ExtraInformation></ExtraInformation>
+            <Skill></Skill>
+            <Projects></Projects>
         </div>
     );
 };
