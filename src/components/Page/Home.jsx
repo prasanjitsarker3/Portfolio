@@ -21,13 +21,13 @@ const Home = () => {
         const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link'; // Replace with your actual Google Drive link
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', true); // Set the desired file name
+        link.setAttribute('download', true); 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
     const handleEmail = () => {
-        const emailAddress = 'sarkerprasanjit379@gmail.com'; // Replace with your email address
+        const emailAddress = 'sarkerprasanjit379@gmail.com'; 
         const subject = 'Subject Here...';
     
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
@@ -65,8 +65,8 @@ const Home = () => {
 
                     </div>
                 </div>
-            </div>
-            <About></About>
+            </div> 
+            <About></About> 
             <ExtraInformation></ExtraInformation>
         </div>
     );
