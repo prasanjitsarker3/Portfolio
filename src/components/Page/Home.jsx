@@ -18,7 +18,7 @@ import About from './About';
 import ExtraInformation from './ExtraInformation';
 const Home = () => {
     const handleDownload = () => {
-        const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link'; // Replace with your actual Google Drive link
+        const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link'; 
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', true); 
