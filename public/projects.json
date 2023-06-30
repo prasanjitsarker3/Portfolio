@@ -1,0 +1,120 @@
+[
+    {
+        "id": "1",
+        "name": "Calculator",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/8xpZKbN/Screenshot-2023-07-01-010420.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/calculator/tree/main",
+        "live": "https://github.com/prasanjitsarker3/calculator/tree/main",
+        "title": "Using HTML, CSS, and JavaScript, you can create a calculator project that enables users to perform basic arithmetic operations like addition, subtraction, multiplication, and division, providing a user-friendly interface for calculations on the web.",
+        "category": "javascript"
+    },
+    {
+        "id": "2",
+        "name": "Quiz App",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/s5xpPW6/Screenshot-2023-07-01-010609.png"
+            },
+            {
+                "id": "2",
+                "img": "https://i.ibb.co/qmCV0y0/Screenshot-2023-07-01-011008.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/CodeA1/tree/main/QuizHero",
+        "live": "https://superlative-starship-92d73e.netlify.app",
+        "title": "By utilizing HTML, CSS, and JavaScript, you can develop an engaging Quiz app that allows users to answer multiple-choice questions, provides instant feedback on their responses, and calculates their final score, making learning and assessment interactive on the web.",
+        "category": "javascript"
+    },
+    {
+        "id": "3",
+        "name": "Music App",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/1vChJ2d/Screenshot-2023-07-01-011455.png"
+            },
+            {
+                "id": "2",
+                "img": "https://i.ibb.co/4RnysLz/Screenshot-2023-07-01-011530.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/hard-rock",
+        "live": " https://prasanjitsarker3.github.io/hard-rock/?fbclid=IwAR0Yz12yzj0bswkGY2T-bTaptZ1Evw9MmIBVZKhOtdVQitG4KGhKZODQ83c#",
+        "title": " Leveraging HTML, CSS, and JavaScript, you can create a Music App that enables users to browse and play their favorite songs create playlists  and customize the visual appearance of the player offering a seamless and enjoyable music listening experience on the web.",
+        "category": "javascript"
+    },
+   
+
+
+
+
+
+    {
+        "id": "4",
+        "name": "Knowledge Book",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/Lz3LZt2/Screenshot-2023-07-01-014959.png"
+            },
+            {
+                "id": "2",
+                "img": "https://i.ibb.co/Vt4KyH9/Screenshot-2023-07-01-015114.png"
+            },
+            {
+                "id": "3",
+                "img": "https://i.ibb.co/x5czgfD/Screenshot-2023-07-01-015309.png"
+            },
+            {
+                "id": "4",
+                "img": "https://i.ibb.co/NNCQg4C/Screenshot-2023-07-01-015203.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/books",
+        "live": "https://charming-narwhal-a7b463.netlify.app",
+        "title": "By integrating React.js, local storage, and Firebase,develop an online book selling website where users can browse and purchase books, store their preferences locally, and utilize Firebase for secure user authentication, real-time updates, and seamless order management, providing an efficient and personalized e-commerce experience for book enthusiasts.",
+        "category": "react"
+    },
+    {
+        "id": "5",
+        "name": "Travel World",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/s5xpPW6/Screenshot-2023-07-01-010609.png"
+            },
+            {
+                "id": "2",
+                "img": "https://i.ibb.co/qmCV0y0/Screenshot-2023-07-01-011008.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/CodeA1/tree/main/QuizHero",
+        "live": "https://superlative-starship-92d73e.netlify.app",
+        "title": "By utilizing HTML, CSS, and JavaScript, you can develop an engaging Quiz app that allows users to answer multiple-choice questions, provides instant feedback on their responses, and calculates their final score, making learning and assessment interactive on the web.",
+        "category": "Javascript"
+    },
+    {
+        "id": "3",
+        "name": "Music App baki eita",
+        "photo": [
+            {
+                "id": "1",
+                "img": "https://i.ibb.co/1vChJ2d/Screenshot-2023-07-01-011455.png"
+            },
+            {
+                "id": "2",
+                "img": "https://i.ibb.co/4RnysLz/Screenshot-2023-07-01-011530.png"
+            }
+        ],
+        "Github": "https://github.com/prasanjitsarker3/hard-rock",
+        "live": " https://prasanjitsarker3.github.io/hard-rock/?fbclid=IwAR0Yz12yzj0bswkGY2T-bTaptZ1Evw9MmIBVZKhOtdVQitG4KGhKZODQ83c#",
+        "title": " Leveraging HTML, CSS, and JavaScript, you can create a Music App that enables users to browse and play their favorite songs create playlists  and customize the visual appearance of the player offering a seamless and enjoyable music listening experience on the web.",
+        "category": "Javascript"
+    }
+]
