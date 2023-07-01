@@ -11,45 +11,36 @@ import {
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     //px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8
+
+    const options = <>
+        <li>
+            <NavLink to='/' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Home</NavLink>
+        </li>
+        <li>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>About</NavLink>
+        </li>
+        <li><Link to='/skill' className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'>Skill</Link>
+        </li>
+        <li>
+            <NavLink to='/project' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Project</NavLink>
+        </li>
+    </>
     return (
-        <div className='bg-base-100 lg:px-12 py-5 md:px-14 px-4 z-50 sticky top-0'>
+        <div className='bg-base-100 lg:px-6 py-5 md:px-14 px-4 z-50 sticky top-0'>
             <div className='relative flex items-center justify-between  '>
                 {/* Logo Section */}
                 <Link to='/' className='inline-flex items-center'>
                     {/* <BoltIcon className='h-6 w-6 text-blue-500' /> */}
 
-                    <span className='ml-2 text-xl font-bold tracking-wide text-gray-800'>
+                    <span className='ml-2 text-2xl font-bold tracking-wide text-gray-800'>
                         Prasanjit <span className='text-emerald-500'>Sarker</span>
                     </span>
                 </Link>
 
                 {/* Nav Items Section */}
                 <ul className='items-center font-bold hidden space-x-8 lg:flex'>
-                    <li>
-                        <NavLink
-                            to='/'
-                            className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
-                        >
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/about'
-                            className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
-                        >
-                            About
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to='/project'
-                            className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
-                        >
-                            Project
-                        </NavLink>
-                    </li>
-                   
+                    {options}
+
                 </ul>
                 {/* Mobile Navbar Section */}
                 <div className='lg:hidden'>
@@ -66,14 +57,7 @@ const Header = () => {
                             <div className='p-5 bg-base-100  text-black font-bold border rounded shadow-sm'>
                                 {/* Logo & Button section */}
                                 <div className='flex items-center justify-between mb-4'>
-                                    <div>
-                                        <Link to='/' className='inline-flex items-center'>
-                                            {/* <BoltIcon className='h-6 w-6 text-blue-500' /> */}
-                                            {/* <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                Books
-                                            </span> */}
-                                        </Link>
-                                    </div>
+                                   
                                     {/* Dropdown menu close button */}
                                     <div>
                                         <button
@@ -88,35 +72,7 @@ const Header = () => {
                                 {/* Mobile Nav Items Section */}
                                 <nav>
                                     <ul className='space-y-4'>
-                                        <li>
-                                            <Link to='/' className='default'>
-                                                Home
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to='/about'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                            >
-                                                About
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to='/project'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                            >
-                                                Project
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                to='/login'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                            >
-                                                Login
-                                            </Link>
-                                        </li>
+                                        {options}
 
                                     </ul>
                                 </nav>

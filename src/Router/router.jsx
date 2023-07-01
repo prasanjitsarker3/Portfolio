@@ -4,6 +4,7 @@ import Main from '../Layout/Main';
 import Home from '../components/Page/Home';
 import About from '../components/Page/About';
 import Projects from '../components/Page/Projects';
+import Skill from '../components/Page/Skill';
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,12 @@ const router = createBrowserRouter([
             , {
                 path: 'about',
                 element: <About></About>
+            }
+            ,
+            { 
+                path:"skill",
+                element:<Skill></Skill>
+
             }
             ,
             {

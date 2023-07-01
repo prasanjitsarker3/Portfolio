@@ -6,28 +6,29 @@ import github from '../../assets/image/github.png'
 import linkedin from '../../assets/image/linkedin.png'
 import facebook from '../../assets/image/facebook.png'
 import instagram from '../../assets/image/instagram.png'
-import About from './About'; 
+import About from './About';
 import ExtraInformation from './ExtraInformation';
 import Skill from './Skill';
 import Projects from './Projects';
+import Contact from './Contact';
 const Home = () => {
     const handleDownload = () => {
-        const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link'; 
+        const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link';
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', true); 
+        link.setAttribute('download', true);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
     const handleEmail = () => {
-        const emailAddress = 'sarkerprasanjit379@gmail.com'; 
+        const emailAddress = 'sarkerprasanjit379@gmail.com';
         const subject = 'Subject Here...';
-    
+
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
         window.open(mailtoLink);
-      };
-    return ( 
+    };
+    return (
         <div className=''>
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse justify-center">
@@ -35,7 +36,7 @@ const Home = () => {
                         <Lottie animationData={animation} loop={true} className='lg:h-[500px]' />
                     </div>
                     <div className='md:w-1/2 mx-auto font-serif md:text-left text-center'>
-                        <h1 className="md:text-5xl text-4xl font-serif">Prasanjit Sarker</h1>
+                        <h1 className="md:text-5xl text-4xl font-serif">Hi,I'm Prasanjit Sarker</h1>
                         <h1 className='py-5 md:text-4xl text-3xl font-serif' >Mern Stack Developer</h1>
                         <p className="pb-6 text-xl pr-10">I'm driven by exploring cutting-edge advancements, conquering coding challenges, and pioneering innovative solutions that shape the digital landscape.High Level Experience in web design and development knowledge producing quality work.</p>
                         <div className='flex md:justify-start justify-center gap-5 pb-3'>
@@ -53,17 +54,24 @@ const Home = () => {
                             </a>
                         </div>
                         <div className='flex md:justify-start justify-center gap-3'>
-                            <button onClick={handleEmail} className="btn btn-primary md:mr-3 ">Hire Me ! </button>
-                            <button onClick={handleDownload} className="btn btn-primary">Download Resume<FaArrowDown/></button>
+                            <button onClick={handleEmail} className="btn bg-gradient-to-r from-teal-400  to-teal-600 border-none md:mr-3 ">Hire Me ! </button>
+                            <button onClick={handleDownload} className="btn bg-gradient-to-r from-teal-400  to-teal-600 border-none">Download Resume<FaArrowDown /></button>
                         </div>
 
                     </div>
                 </div>
-            </div> 
-            <About></About> 
+            </div>
+            <About></About>
             <ExtraInformation></ExtraInformation>
             <Skill></Skill>
             <Projects></Projects>
+            <Contact></Contact>
+
+            <footer className="footer footer-center p-4 md:text-2xl text-xl my-10">
+                <div>
+                    <p>Copyright © 2023 - All right reserved by Prasanjit Sarker</p>
+                </div>
+            </footer>
         </div>
     );
 };

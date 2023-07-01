@@ -3,20 +3,20 @@ import React from 'react';
 const ExtraInformation = () => {
     return (
         <div>
-            <div className='text-center py-10 text-emerald-700'>
-                <h1 className='text-3xl font-serif '>Extra Information About Career</h1>
+            <div className='text-center py-10 text-teal-600'>
+                <h1 className='text-3xl font-serif '>Extra Information Daily Goal</h1>
             </div>
             <div className='grid md:grid-cols-3 gap-5'>
-                <div className="mx-auto border shadow-lg p-3">
-                    <h1 className='text-center text-xl font-serif py-3'>Relevant Course</h1>
+                <div className="mx-auto   shadow-lg p-3"> 
+                    <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Relevant Course</h1>
                     <div className=''>
                         <li>Full Stack Web Development || Programming Hero</li>
                         <li className='py-3'>Industrial Training Program on Python,DSA,DMS || MYWBUT</li>
                         <li>C,C++,DSA,Problem Solving || Phitron</li>
                     </div>
                 </div>
-                <div className="div border shadow-lg p-3">
-                    <h1 className='text-center text-xl font-serif py-3'>Code & Development</h1>
+                <div className=" shadow-lg p-3">
+                    <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Code & Development</h1>
                     <div>
                         <li>
                             Problem solved using C,C++,Java on
@@ -32,12 +32,12 @@ const ExtraInformation = () => {
                         </li>
                     </div>
                 </div>
-                <div className="div border shadow-lg p-3">
-                    <h1 className='text-center text-xl font-serif py-3'>Extracurricular Activities</h1>
+                <div className="mx-auto shadow-lg p-3">
+                    <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Extracurricular Activities</h1>
                     <div>
-                        <li>Dhrubotara Youth Development Foundation - India</li>
-                        <li className='py-3'>Bangladesh - India Friendship Student Organization</li>
-                        <li>SAMARPAN: Ek soch, Ek viswas</li>
+                        <li>Dhrubotara Youth Development Foundation - India (Member)</li>
+                        <li className='py-3'>Bangladesh - India Friendship Student Organization (Member)</li>
+                        <li>SAMARPAN: Ek soch, Ek viswas (Member)</li>
                     </div>
                 </div>
             </div>

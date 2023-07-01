@@ -1,19 +1,20 @@
 import React from 'react';
 import photo from '../../Icon/aboutPhoto.jpg';
 import img from '../../assets/image/dp-removebg (1).png'
+import ExtraInformation from './ExtraInformation';
 
 const About = () => {
     return (
-        <div id='about-page' className="py-7 w-[85%] mx-auto">
+        <div id='about-page' className="py-7 md:px-0 px-3 w-full mx-auto">
             <div>
                 <h1 className='text-center text-4xl italic font-serif  '>About </h1>
                 <hr className='w-[130px] mx-auto border-2 border-emerald-700' />
             </div>
-
+ 
             <div className='grid md:grid-cols-2 gap-4'>
                 <div className='flex justify-center items-center py-7'>
                     {/* <img src={photo} alt="" srcset="" className=' rounded-full' /> */}
-                    <img className="lg:w-full mask mask-hexagon bg-emerald-400" src={img} />
+                    <img className="lg:w-full mask mask-hexagon bg-gradient-to-r from-teal-400  to-teal-600" src={img} />
                 </div>
                 <div className='pt-5 mx-auto'>
                     <p className=' p-3 font-serif text-lg'>
@@ -42,6 +43,7 @@ const About = () => {
                 </div>
 
             </div>
+            <ExtraInformation></ExtraInformation>
         </div>
     );
 };
