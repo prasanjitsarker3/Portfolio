@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Lottie from "lottie-react";
 import animation from '../../assets/140022-coding.json';
 import { FaArrowDown } from 'react-icons/fa';
@@ -7,13 +7,13 @@ import linkedin from '../../assets/image/linkedin.png'
 import facebook from '../../assets/image/facebook.png'
 import instagram from '../../assets/image/instagram.png'
 import About from './About';
-import ExtraInformation from './ExtraInformation';
 import Skill from './Skill';
 import Projects from './Projects';
 import Contact from './Contact';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
     const handleDownload = () => {
@@ -26,15 +26,15 @@ const Home = () => {
         document.body.removeChild(link);
     };
     const handleEmail = () => {
-        const emailAddress = 'sarkerprasanjit379@gmail.com';
-        const subject = 'Subject Here...';
-
-        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+        const fromAddress = 'sarkerprasanjit379@gmail.com'
+        const mailtoLink = `mailto:${fromAddress}`
         window.open(mailtoLink);
     };
     useEffect(() => {
         AOS.init({});
     }, [])
+
+
     return (
         <div className=''>
             <div className="hero ">
@@ -43,9 +43,15 @@ const Home = () => {
                         <Lottie animationData={animation} loop={true} className='lg:h-[500px]' />
                     </div>
                     <div className='md:w-1/2 mx-auto font-serif md:text-left text-center'>
-                        <h1 data-aos="fade-down" className="md:text-5xl text-4xl font-serif">Hi,I'm Prasanjit Sarker</h1>
-                        <h1 className='py-5 md:text-4xl text-3xl font-serif' >Mern Stack Developer</h1>
-                        <p className="pb-6 text-xl pr-10">I'm driven by exploring cutting-edge advancements, conquering coding challenges, and pioneering innovative solutions that shape the digital landscape.High Level Experience in web design and development knowledge producing quality work.</p>
+                        <h1 data-aos="fade-down" className="text-teal-600 md:text-5xl text-4xl font-serif">Hi,I'm Prasanjit Sarker</h1>
+                        <div className='py-4  md:text-4xl text-3xl font-serif'>
+                            <TypeAnimation
+                                sequence={['Mern Stack Developer', 1000, 'Font-End Wev Developer', 1000]}
+                                className='py-5 '
+                                repeat={Infinity}
+                            />
+                        </div>
+                        <p className="pb-6 md:text-xl text-lg pr-10">I thrive on exploring cutting-edge advancements and conquering coding challenges to pioneer innovative solutions. With high-level experience in web design and development, I produce quality work that shapes the digital landscape.</p>
                         <div data-aos="zoom-in-up" className='flex md:justify-start justify-center gap-5 pb-3'>
                             <a href="https://github.com/prasanjitsarker3" target="_blank">
                                 <img src={github} alt="" srcset="" className='w-12' />
@@ -69,7 +75,6 @@ const Home = () => {
                 </div>
             </div>
             <About></About>
-            {/* <ExtraInformation></ExtraInformation> */}
             <Skill></Skill>
             <Projects></Projects>
             <Contact></Contact>
@@ -79,6 +84,7 @@ const Home = () => {
                     <p>Copyright © 2023 - All right reserved by Prasanjit Sarker</p>
                 </div>
             </footer>
+
         </div>
     );
 };

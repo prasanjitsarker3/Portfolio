@@ -88,7 +88,7 @@ const Header = () => {
 
                                     {/* Dropdown menu close button */}
                                     <div>
-                                        <button
+                                        <button 
                                             aria-label='Close Menu'
                                             title='Close Menu'
                                             onClick={() => setIsMenuOpen(false)}
@@ -99,7 +99,7 @@ const Header = () => {
                                 </div>
                                 {/* Mobile Nav Items Section */}
                                 <nav>
-                                    <ul className='space-y-4'>
+                                    <ul className='space-y-4 '>
                                         {options}
 
                                     </ul>
