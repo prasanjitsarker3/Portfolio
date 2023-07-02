@@ -59,7 +59,7 @@ const Home = () => {
                             <a href="https://www.linkedin.com/in/prasanjit-sarker-49a0b7220/" target="_blank">
                                 <img src={linkedin} alt="" srcset="" className='w-12' />
                             </a>
-                            <a href="https://www.facebook.com/prasanjit.sarker.56" target="_blank">
+                            <a href="https://www.facebook.com/prasanjit.sarker.56" target="_blank"> 
                                 <img src={facebook} alt="" srcset="" className='w-12' />
                             </a>
                             <a href="https://www.instagram.com/prasanjit.sarker.56/?igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR37l9jEihpBhNGS7StKjkZkogQWsfHMP8EwFFTXIdSo75Jc8cp4xaB5_tA" target="_blank">
@@ -84,9 +84,9 @@ const Home = () => {
                     <p>Copyright © 2023 - All right reserved by Prasanjit Sarker</p>
                 </div>
             </footer>
-
+          
         </div>
     );
-};
+};  
 
 export default Home;
