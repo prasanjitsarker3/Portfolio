@@ -7,7 +7,7 @@ const ExtraInformation = () => {
                 <h1 className='text-3xl font-serif '>Extra Information Daily Goal</h1>
             </div>
             <div className='grid md:grid-cols-3 gap-5'>
-                <div className="mx-auto   shadow-lg p-3"> 
+                <div data-aos="fade-up-right" className="mx-auto   shadow-lg p-3"> 
                     <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Relevant Course</h1>
                     <div className=''>
                         <li>Full Stack Web Development || Programming Hero</li>
@@ -15,7 +15,7 @@ const ExtraInformation = () => {
                         <li>C,C++,DSA,Problem Solving || Phitron</li>
                     </div>
                 </div>
-                <div className=" shadow-lg p-3">
+                <div data-aos="zoom-in" className=" shadow-lg p-3">
                     <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Code & Development</h1>
                     <div>
                         <li>
@@ -32,7 +32,7 @@ const ExtraInformation = () => {
                         </li>
                     </div>
                 </div>
-                <div className="mx-auto shadow-lg p-3">
+                <div data-aos="fade-up-right" className="mx-auto shadow-lg p-3">
                     <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Extracurricular Activities</h1>
                     <div>
                         <li>Dhrubotara Youth Development Foundation - India (Member)</li>

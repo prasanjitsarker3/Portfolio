@@ -11,6 +11,10 @@ import ExtraInformation from './ExtraInformation';
 import Skill from './Skill';
 import Projects from './Projects';
 import Contact from './Contact';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
     const handleDownload = () => {
         const url = 'https://drive.google.com/file/d/1vigDwlgL2FARzZQAhTCSe1K3hmLtLDCz/view?usp=drive_link';
@@ -28,18 +32,21 @@ const Home = () => {
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
         window.open(mailtoLink);
     };
+    useEffect(() => {
+        AOS.init({});
+    }, [])
     return (
         <div className=''>
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse justify-center">
-                    <div className='lg:w-1/2  mx-auto'>
+                    <div data-aos=" fade-up" className='lg:w-1/2  mx-auto'>
                         <Lottie animationData={animation} loop={true} className='lg:h-[500px]' />
                     </div>
                     <div className='md:w-1/2 mx-auto font-serif md:text-left text-center'>
-                        <h1 className="md:text-5xl text-4xl font-serif">Hi,I'm Prasanjit Sarker</h1>
+                        <h1 data-aos="fade-down" className="md:text-5xl text-4xl font-serif">Hi,I'm Prasanjit Sarker</h1>
                         <h1 className='py-5 md:text-4xl text-3xl font-serif' >Mern Stack Developer</h1>
                         <p className="pb-6 text-xl pr-10">I'm driven by exploring cutting-edge advancements, conquering coding challenges, and pioneering innovative solutions that shape the digital landscape.High Level Experience in web design and development knowledge producing quality work.</p>
-                        <div className='flex md:justify-start justify-center gap-5 pb-3'>
+                        <div data-aos="zoom-in-up" className='flex md:justify-start justify-center gap-5 pb-3'>
                             <a href="https://github.com/prasanjitsarker3" target="_blank">
                                 <img src={github} alt="" srcset="" className='w-12' />
                             </a>
@@ -62,7 +69,7 @@ const Home = () => {
                 </div>
             </div>
             <About></About>
-            <ExtraInformation></ExtraInformation>
+            {/* <ExtraInformation></ExtraInformation> */}
             <Skill></Skill>
             <Projects></Projects>
             <Contact></Contact>

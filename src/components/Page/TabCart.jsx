@@ -3,8 +3,8 @@ import React from 'react';
 const TabCart = ({ project }) => {
     const { name, photo, Github, client, server, title, live } = project;
     return (
-        <div className='mx-auto'>
-            <div className="card w-96 shadow-xl ">
+        <div data-aos="zoom-in-down" className='mx-auto'>
+            <div  className="card w-96 shadow-xl ">
                 {/* <figure>
                     <img src={photo[0].img} alt="" className='h-[200px]' />
                 </figure> */}
@@ -21,7 +21,7 @@ const TabCart = ({ project }) => {
                     </h2>
                     <p>{title?.slice(0, 120)}...</p>
                     <div className="card-actions justify-center gap-5">
-                        <a className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#1f8672]' target="_blank" href={live}> Live</a>
+                        <a  className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#1f8672]' target="_blank" href={live}> Live</a>
                         {
                             Github ? <>
                                 <a className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#115e4e]' target="_blank" href={Github}> Github</a>

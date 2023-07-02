@@ -10,13 +10,13 @@ const About = () => {
                 <h1 className='text-center text-4xl italic font-serif  '>About </h1>
                 <hr className='w-[130px] mx-auto border-2 border-emerald-700' />
             </div>
- 
+
             <div className='grid md:grid-cols-2 gap-4'>
-                <div className='flex justify-center items-center py-7'>
+                <div data-aos="fade-right" className='flex justify-center items-center py-7'>
                     {/* <img src={photo} alt="" srcset="" className=' rounded-full' /> */}
                     <img className="lg:w-full mask mask-hexagon bg-gradient-to-r from-teal-400  to-teal-600" src={img} />
                 </div>
-                <div className='pt-5 mx-auto'>
+                <div data-aos="fade-left" className='pt-5 mx-auto'>
                     <p className=' p-3 font-serif text-lg'>
                         Literature to tech, I'm a passionate learner and educator. JavaScript developer focused on full stack web development, aspiring to become a dynamic English faculty
                     </p>
@@ -35,7 +35,7 @@ const About = () => {
                         <div className=''>
                             <p className='text-xl'>Twitter Sentiment Analysis || Python</p>
                             <p className='text-xl'>Doctor Management System || MERN</p>
-                            
+
 
                         </div>
 
