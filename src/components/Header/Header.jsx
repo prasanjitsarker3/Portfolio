@@ -28,13 +28,15 @@ const Header = () => {
     //px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8
 
     const options = <>
+        <li></li>
         <li>
             <NavLink to='/' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Home</NavLink>
         </li>
         <li>
             <NavLink to='/about' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>About</NavLink>
         </li>
-        <li><Link to='/skill' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Skill</Link>
+
+        <li><NavLink to='/skill' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Skill</NavLink>
         </li>
         <li>
             <NavLink to='/project' className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}>Project</NavLink>
@@ -42,7 +44,7 @@ const Header = () => {
         <li>
             <label className="swap swap-rotate">
                 {/* this hidden checkbox controls the state */}
-                <input  style={{ display: 'none' }} onClick={themehandle} type="checkbox" className="toggle toggle-md text-white !" checked={theme === 'light' ? false : true} />
+                <input style={{ display: 'none' }} onClick={themehandle} type="checkbox" className="toggle toggle-md text-white !" checked={theme === 'light' ? false : true} />
 
                 {/* sun icon */}
                 <svg className="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" /></svg>
@@ -78,28 +80,28 @@ const Header = () => {
                         title='Open Menu'
                         onClick={() => setIsMenuOpen(true)}
                     >
-                        <Bars3BottomRightIcon className='w-5  font-bold' />
+                        <Bars3BottomRightIcon className='w-8 font-bold' />
                     </button>
                     {isMenuOpen && (
                         <div className='absolute top-0 left-0 w-full z-10  font-bold'>
-                            <div className='p-5 bg-base-100   font-bold border rounded shadow-sm'>
+                            <div className='p-3 bg-base-100   font-bold border rounded shadow-sm'>
                                 {/* Logo & Button section */}
-                                <div className='flex items-center justify-between mb-4'>
+                                <div className='flex items-center justify-between mb-2'>
 
                                     {/* Dropdown menu close button */}
                                     <div>
-                                        <button 
+                                        <button
                                             aria-label='Close Menu'
                                             title='Close Menu'
                                             onClick={() => setIsMenuOpen(false)}
                                         >
-                                            <XMarkIcon className='w-5 ' />
+                                            <XMarkIcon className='w-8 ' />
                                         </button>
                                     </div>
                                 </div>
                                 {/* Mobile Nav Items Section */}
-                                <nav>
-                                    <ul className='space-y-4 '>
+                                <nav className='flex justify-center'>
+                                    <ul className='space-y-1 flex justify-between gap-5 items-center'>
                                         {options}
 
                                     </ul>

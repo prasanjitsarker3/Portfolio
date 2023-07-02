@@ -81,14 +81,18 @@
         "photo": [
             {
                 "id": "1",
-                "img": "https://i.ibb.co/s5xpPW6/Screenshot-2023-07-01-010609.png"
+                "img": "https://i.ibb.co/t2KS84N/Screenshot-2023-07-03-020948.png"
             },
             {
                 "id": "2",
-                "img": "https://i.ibb.co/qmCV0y0/Screenshot-2023-07-01-011008.png"
+                "img": "https://i.ibb.co/6bnn4fd/Screenshot-2023-07-03-021001.png"
+            },
+            {
+                "id": "3",
+                "img": "https://i.ibb.co/zb4d9bz/Screenshot-2023-07-03-021015.png"
             }
         ],
-        "live": "https://superlative-starship-92d73e.netlify.app",
+        "live": "https://grand-dolphin-d74e65.netlify.app",
         "client": "https://github.com/prasanjitsarker3/travel-client-site",
         "server": "https://github.com/prasanjitsarker3/travel-server-site",
         "title": "An intuitive and responsive ReactJS travel web application that empowers users to discover hidden gems, plan their trips efficiently, and connect with fellow travelers through interactive maps, curated recommendations, and a vibrant community platform.",
@@ -160,7 +164,7 @@
         "live": "https://cartandcarft.web.app",
         "client": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management",
         "server": "https://github.com/prasanjitsarker3/Art-Craft-Course-Management-Server",
-        "title": "A comprehensive job searching web application built using ReactJS. It includes user, instructor, and admin dashboard panels. Users can enroll in courses and confirm payments, while instructors can add courses. Admins have control over the entire website. User data is stored in Firebase and MongoDB, ensuring data security through JWT (JSON Web Tokens) and AxiosSecure. ",
+        "title": "A comprehensive online course searching web application built using ReactJS. It includes user, instructor, and admin dashboard panels. Users can enroll in courses and confirm payments, while instructors can add courses. Admins have control over the entire website. User data is stored in Firebase and MongoDB, ensuring data security through JWT (JSON Web Tokens) and AxiosSecure. ",
         "category": "mern"
     },
     {
@@ -228,7 +232,8 @@
             }
         ],
         "live": "https://chilekota-client.web.app",
-        "client": "https://github.com/prasanjitsarker3/cafe",
+        "client": "https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-prasanjitsarker3",
+        "server": "https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-prasanjitsarker3",
         "title": "The Recipe Website provides easy access to a variety of recipes. Private routes have been implemented to ensure data security and protect sensitive information. Users have the option to log in and create an account. Additionally, users can log in using their existing GitHub and Google accounts, offering convenient authentication methods",
         "category": "mern"
     }

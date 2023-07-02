@@ -15,7 +15,7 @@ const ExtraInformation = () => {
                         <li>C,C++,DSA,Problem Solving || Phitron</li>
                     </div>
                 </div>
-                <div data-aos="zoom-in" className=" shadow-lg p-3">
+                <div data-aos="zoom-in" className="mx-auto shadow-lg p-3">
                     <h1 className='text-center text-xl font-serif py-3 text-teal-600'>Code & Development</h1>
                     <div>
                         <li>

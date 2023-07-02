@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 const TabCart = ({ project }) => {
     const { name, photo, Github, client, server, title, live } = project;
@@ -24,9 +25,9 @@ const TabCart = ({ project }) => {
                         <a  className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#1f8672]' target="_blank" href={live}> Live</a>
                         {
                             Github ? <>
-                                <a className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#115e4e]' target="_blank" href={Github}> Github</a>
+                                <a className='p-2 text-white font-mono px-5 py-3 rounded bg-[#19D3AE] hover:bg-[#115e4e]' target="_blank" href={Github}><FaGithub className=''></FaGithub></a>
                             </>
-                                : <a className='p-2 text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#196959]' target="_blank" href={client}> Clint</a>
+                                : <a className='p-2  text-white font-mono px-5 rounded bg-[#19D3AE] hover:bg-[#196959]' target="_blank" href={client}> Clint</a>
                         }
                         {
                             server ? <>
