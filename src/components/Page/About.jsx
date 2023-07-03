@@ -5,7 +5,7 @@ import ExtraInformation from './ExtraInformation';
 
 const About = () => {
     return ( 
-        <div id='about-page' className="py-7 md:px-0 px-3 w-full mx-auto">
+        <div id='about-page' className="py-7 md:px-0 px-5 mx-auto">
             <div>
                 <h1 className='text-center text-4xl italic font-serif  '>About </h1>
                 <hr className='w-[130px] mx-auto border-2 border-emerald-700' />

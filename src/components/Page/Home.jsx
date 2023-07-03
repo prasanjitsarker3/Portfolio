@@ -39,7 +39,7 @@ const Home = () => {
         <div className=''>
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse justify-center">
-                    <div data-aos=" fade-up" className='lg:w-1/2  mx-auto'>
+                    <div data-aos=" fade-up" className='lg:w-1/2 md:px-0 px-3  mx-auto'>
                         <Lottie animationData={animation} loop={true} className='lg:h-[500px]' />
                     </div>
                     <div className='md:w-1/2 mx-auto font-serif md:text-left text-center'>
@@ -51,7 +51,7 @@ const Home = () => {
                                 repeat={Infinity}
                             />
                         </div>
-                        <p className="pb-6 md:text-xl text-lg pr-10">I thrive on exploring cutting-edge advancements and conquering coding challenges to pioneer innovative solutions. With high-level experience in web design and development, I produce quality work that shapes the digital landscape.</p>
+                        <p className="pb-6 md:text-lg md:pr-10">I thrive on exploring cutting-edge advancements and conquering coding challenges to pioneer innovative solutions. With high-level experience in web design and development, I produce quality work that shapes the digital landscape.</p>
                         <div data-aos="zoom-in-up" className='flex md:justify-start justify-center gap-5 pb-3'>
                             <a href="https://github.com/prasanjitsarker3" target="_blank">
                                 <img src={github} alt="" srcset="" className='w-12' />
@@ -67,8 +67,8 @@ const Home = () => {
                             </a>
                         </div>
                         <div className='flex md:justify-start justify-center gap-3'>
-                            <button onClick={handleEmail} className="btn bg-gradient-to-r from-teal-400  to-teal-600 border-none md:mr-3 ">Hire Me ! </button>
-                            <button onClick={handleDownload} className="btn bg-gradient-to-r from-teal-400  to-teal-600 border-none">Download Resume<FaArrowDown /></button>
+                            <button onClick={handleEmail} className="btn bg-gradient-to-r from-teal-600  to-teal-900 border-none md:mr-3 ">Hire Me ! </button>
+                            <button onClick={handleDownload} className="btn bg-gradient-to-r from-teal-600  to-teal-900 border-none">Download Resume<FaArrowDown /></button>
                         </div>
 
                     </div>
