@@ -37,7 +37,7 @@ const Home = () => {
 
     return (
         <div className=''>
-            <div className="hero ">
+            <div className="hero  overflow-x-hidden">
                 <div className="hero-content flex-col lg:flex-row-reverse justify-center">
                     <div data-aos=" fade-up" className='lg:w-1/2 md:px-0 px-3  mx-auto'>
                         <Lottie animationData={animation} loop={true} className='lg:h-[500px]' />
