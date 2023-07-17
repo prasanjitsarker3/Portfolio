@@ -51,7 +51,7 @@ const Home = () => {
                                 repeat={Infinity}
                             />
                         </div>
-                        <p className="pb-6 md:text-lg md:pr-10">I thrive on exploring cutting-edge advancements and conquering coding challenges to pioneer innovative solutions. With high-level experience in web design and development, I produce quality work that shapes the digital landscape.</p>
+                        <p className="pb-6 md:text-lg md:pr-10">I am a highly motivated and ambitious B Tech student majoring in Information Technology. With a strong passion for technology and a keen interest in problem-solving, I strive to excel in the field of IT and contribute to the development of innovative solutions.</p>
                         <div data-aos="zoom-in-up" className='flex md:justify-start justify-center gap-5 pb-3'>
                             <a href="https://github.com/prasanjitsarker3" target="_blank">
                                 <img src={github} alt="" srcset="" className='w-12' />
